@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import styled, {createGlobalStyle} from 'styled-components';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Catalog from './components/Catalog/Catalog';
@@ -9,6 +9,8 @@ import Footer from './components/Footer/Footer';
 
 const GlobalStyle = createGlobalStyle`
 
+  @import url('https://fonts.googleapis.com/css?family=Catamaran:400,100,300');
+  
   body{
       font-family: "Catamaran", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 14px;
@@ -33,13 +35,13 @@ class App extends Component {
             <GlobalStyle/>
             <Header/>
             <Container>
-               {/*<Router>*/}
-               {/*<div>*/}
-               {/*<Route path='/' component={Home}/>*/}
-               {/*<Route path='/catalog' component={Catalog}/>*/}
-               {/*<Route path='/about' component={About}/>*/}
-               {/*</div>*/}
-               {/*</Router>*/}
+               <Router>
+                  <Switch>
+                     <Route path='/catalog' component={Catalog}/>
+                     <Route path='/about' component={About}/>
+                     <Route path='/' component={Home}/>
+                  </Switch>
+               </Router>
             </Container>
             <Footer/>
          </>
