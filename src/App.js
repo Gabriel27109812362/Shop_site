@@ -2,6 +2,10 @@ import React, {Component} from 'react';
 import styled, {createGlobalStyle} from 'styled-components';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Header from './components/Header/Header';
+import Home from './components/Home/Home';
+import Catalog from './components/Catalog/Catalog';
+import About from './components/About/About';
+import Footer from './components/Footer/Footer';
 
 const GlobalStyle = createGlobalStyle`
 
@@ -20,15 +24,15 @@ class App extends Component {
       return (
          <>
             <GlobalStyle/>
+            <Header/>
             <Router>
                <div>
-                  <Route path='/home' component = />
-                  <Route path='/catalog'/>
-                  <Route path='/about'/>
+                  <Route path='/' component={Home}/>
+                  <Route path='/catalog' component={Catalog}/>
+                  <Route path='/about' component={About}/>
                </div>
             </Router>
-
-
+            <Footer/>
          </>
       );
    }
