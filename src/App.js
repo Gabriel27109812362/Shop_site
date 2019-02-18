@@ -18,6 +18,13 @@ const GlobalStyle = createGlobalStyle`
       text-align: left;
 }
 `;
+const Container = styled.div`
+width: 970px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+`;
 
 class App extends Component {
    render() {
@@ -25,14 +32,16 @@ class App extends Component {
          <>
             <GlobalStyle/>
             <Header/>
-           {/*<Router>*/}
+            <Container>
+               {/*<Router>*/}
                {/*<div>*/}
-                  {/*<Route path='/' component={Home}/>*/}
-                  {/*<Route path='/catalog' component={Catalog}/>*/}
-                  {/*<Route path='/about' component={About}/>*/}
+               {/*<Route path='/' component={Home}/>*/}
+               {/*<Route path='/catalog' component={Catalog}/>*/}
+               {/*<Route path='/about' component={About}/>*/}
                {/*</div>*/}
-            {/*</Router>*/}
-            {/*<Footer/>*/}
+               {/*</Router>*/}
+            </Container>
+            <Footer/>
          </>
       );
    }
