@@ -25,17 +25,17 @@ class App extends Component {
          <>
             <GlobalStyle/>
             <Header/>
-            <Router>
-               <div>
-                  <Route path='/' component={Home}/>
-                  <Route path='/catalog' component={Catalog}/>
-                  <Route path='/about' component={About}/>
-               </div>
-            </Router>
-            <Footer/>
+           {/*<Router>*/}
+               {/*<div>*/}
+                  {/*<Route path='/' component={Home}/>*/}
+                  {/*<Route path='/catalog' component={Catalog}/>*/}
+                  {/*<Route path='/about' component={About}/>*/}
+               {/*</div>*/}
+            {/*</Router>*/}
+            {/*<Footer/>*/}
          </>
-   );
+      );
    }
-   }
+}
 
-   export default App;
+export default App;

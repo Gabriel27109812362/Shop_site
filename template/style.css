@@ -48,7 +48,7 @@ html, body {
 
 .nav > li {
     float: left;
-}
+}/**/
 
 .nav > li > a {
     font-size: 16px;
@@ -57,7 +57,7 @@ html, body {
     color: #fff;
     display: block;
     text-decoration: none;
-}
+}/**/
 
 /* Navbars */
 
