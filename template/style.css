@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Catamaran:400,100,300');
 
 /* General global */
 html, body {
@@ -22,7 +22,7 @@ html, body {
     font-size: 30px;
     text-transform: uppercase;
     padding: 15px 0;
-}
+}/*1*/
 
 .header-small {
     font-size: 22px;
