@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Products from '../../components/Products/Products'
 
 const HeaderBig = styled.h1`
     font-size: 30px;
@@ -18,7 +19,7 @@ const Home = () => {
       <div>
          <HeaderBig>Welcome to our store </HeaderBig>
          <HeaderSmall>Desktops</HeaderSmall>
-         <HeaderSmall>Products</HeaderSmall>
+         <Products>Products</Products>
          <HeaderSmall>Tablets</HeaderSmall>
       </div>
 
