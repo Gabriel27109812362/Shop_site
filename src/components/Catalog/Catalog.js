@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import FilterHeader from '../FilterHeader/FilterHeader';
+import FilterInput from '../FilterInput/FilterInput';
 
 const HeaderBig = styled.h1`
     font-size: 30px;
@@ -25,18 +27,21 @@ const Filter = styled.div`
 
 const Catalog = () => {
    return (
-      <MainDiv>
+      <div>
          <HeaderBig>Catalog</HeaderBig>
+         <MainDiv>
          <ColumnLeft>
             <Filter>
+               <FilterHeader/>
+               <FilterInput type='text' placeholder='search...'/>
 
             </Filter>
          </ColumnLeft>
          <ColumnRight>
 
          </ColumnRight>
-
-      </MainDiv>
+         </MainDiv>
+      </div>
 
    );
 };

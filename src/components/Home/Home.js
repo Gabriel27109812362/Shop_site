@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Product from '../../components/Product/Product';
+import Product from '../Product/Product';
 
 const HeaderBig = styled.h1`
     font-size: 30px;
