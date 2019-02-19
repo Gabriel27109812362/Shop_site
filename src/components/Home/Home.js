@@ -18,8 +18,10 @@ const Home = () => {
       <div>
          <HeaderBig>Welcome to our store </HeaderBig>
          <HeaderSmall>Desktops</HeaderSmall>
+         <HeaderSmall>Products</HeaderSmall>
+         <HeaderSmall>Tablets</HeaderSmall>
       </div>
-      
+
 
    );
 };
