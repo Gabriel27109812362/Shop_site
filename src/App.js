@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
 }
 `;
 const Container = styled.div`
-width: 970px;
+    width: 970px;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
