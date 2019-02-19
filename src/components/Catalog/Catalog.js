@@ -16,13 +16,21 @@ const ColumnLeft = styled.div`
 const ColumnRight = styled.div`
     width: 75%;
 `;
+const Filter = styled.div`
+    background-color: #f7f7f7;
+    padding: 5px 15px 20px;
+    margin-top: 5px;
+    margin-right: 10px;
+`;
 
 const Catalog = () => {
    return (
       <MainDiv>
          <HeaderBig>Catalog</HeaderBig>
          <ColumnLeft>
+            <Filter>
 
+            </Filter>
          </ColumnLeft>
          <ColumnRight>
 
